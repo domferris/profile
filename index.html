@@ -42,7 +42,7 @@
     <h2>Selected Works</h2>
     <ul>
       <li class="development">
-        <a href="#" onclick="return false;"><h2>Development</h2></a>
+        <a href="#" onclick="return false;" class="projects-list"><h2>Development</h2></a>
         <ul class="projects-section">
           <li class="proj-dev">
             <h2>Reele, <a href="#">reele.co</a></h2>
@@ -55,13 +55,13 @@
         </ul>
       </li>
       <li>
-        <a href="#" onclick="return false;"><h2>Film & Video</h2></a>
+        <a href="#" onclick="return false;" class="projects-list"><h2>Film & Video</h2></a>
         <ul class="projects-section">
 
         </ul>
       </li>
       <li>
-        <a href="#" onclick="return false;"><h2>Photography</h2></a>
+        <a href="#" onclick="return false;" class="projects-list"><h2>Photography</h2></a>
         <ul class="projects-section">
           
         </ul>
@@ -224,7 +224,15 @@
   </section>
 
   <script>
-    document.querySelector('.')
+    projectsList = document.querySelectorAll('.projects-list');
+    projectsSection = document.querySelectorAll('.projects-section');
+
+    const projectsToggle = (event) => {
+      console.log(event);
+      // if proj section is child of proj list, toggle hidden on proj section
+    };
+
+    projectsList.forEach(project => project.addEventListener('click', projectsToggle));
   </script>
 </body>
 
