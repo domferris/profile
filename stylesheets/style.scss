@@ -31,6 +31,14 @@ p {
   color: rgb(65, 65, 65);
 }
 
+section {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15% 0;
+}
+
 .hidden {
   display: none;
 }
@@ -87,6 +95,8 @@ header {
 }
 
 #info {
+  outline: 1px solid purple;
+
   .about {
     outline: 1px solid green;
   }
