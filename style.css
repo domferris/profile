@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 20%;
+}
+
+h1 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+p {
+  color: #191919;
+}
+
+header {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  border: 1px solid blue;
+}
+
+.about {
+  border: 1px solid green;
+}
+
+.work {
+  border: 1px solid blue;
+}
+.work .work-container {
+  border: 1px solid red;
+}
+
+.skills {
+  border: 1px solid orange;
+}
+
+.education {
+  border: 1px solid blue;
+}
+.education .education-container {
+  border: 1px solid green;
+}
+
+.projects {
+  border: 1px solid red;
+}
+.projects .development {
+  border: 16px solid purple;
+}
+.projects .film {
+  border: 16px solid green;
+}
+.projects .project {
+  border: 1px solid aqua;
+}
+
+.contact {
+  border: 1px solid blue;
+  padding: 0 64px;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form input {
+  border: 1px solid red;
+}
+.contact .social-links {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .social-links a {
+  font-size: 6em;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
