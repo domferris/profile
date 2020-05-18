@@ -31,16 +31,20 @@ p {
   color: rgb(25, 25, 25);
 }
 
+.hidden {
+  display: none;
+}
+
+////////////////////
+// SECTIONS
+////////////////////
+
 header {
   border: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.main {
-  border: 1px solid blue;
 }
 
 .about {

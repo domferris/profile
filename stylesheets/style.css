@@ -31,16 +31,16 @@ p {
   color: #191919;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   border: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.main {
-  border: 1px solid blue;
 }
 
 .about {
