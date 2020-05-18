@@ -28,7 +28,7 @@ h4, h5, h6 {
 }
 
 p {
-  color: rgb(25, 25, 25);
+  color: rgb(65, 65, 65);
 }
 
 .hidden {
@@ -51,6 +51,8 @@ header {
   border: 1px solid blue;
 
   .development {
+    border: 1px solid red;
+    
     .pro-dev {
       border: 1px solid aqua;
     }

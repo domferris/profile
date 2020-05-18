@@ -28,7 +28,7 @@ h4, h5, h6 {
 }
 
 p {
-  color: #191919;
+  color: #414141;
 }
 
 .hidden {
@@ -45,6 +45,9 @@ header {
 
 #projects {
   border: 1px solid blue;
+}
+#projects .development {
+  border: 1px solid red;
 }
 #projects .development .pro-dev {
   border: 1px solid aqua;
