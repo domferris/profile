@@ -40,7 +40,7 @@ p {
 ////////////////////
 
 header {
-  border: 1px solid red;
+  outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,62 +48,62 @@ header {
 }
 
 #projects {
-  border: 1px solid blue;
+  outline: 1px solid blue;
 
   .development {
-    border: 1px solid red;
+    outline: 1px solid red;
     
-    .pro-dev {
-      border: 1px solid aqua;
+    .proj-dev {
+      outline: 1px solid green;
     }
   }
 
   .film {
-    .pro-film {
-      border: 1px solid aqua;
+    .proj-film {
+      outline: 1px solid aqua;
     }
   }
 
 }
 
 #experience {
-  border: 1px solid green;
+  outline: 1px solid green;
 
   .work-container {
-    border: 1px solid red;
+    outline: 1px solid red;
   }
 }
 
 .skills {
-  border: 1px solid yellow;
+  outline: 1px solid yellow;
 }
 
 #education {
-  border: 1px solid blue;
+  outline: 1px solid blue;
 
   .education-container {
-    border: 1px solid green;
+    outline: 1px solid green;
   }
 }
 
 #info {
   .about {
-    border: 1px solid green;
+    outline: 1px solid green;
   }
   
   .contact {
-    border: 1px solid blue;
+    outline: 1px solid blue;
   
     .contact-form {
-      border: 1px solid aquamarine;
+      outline: 1px solid aquamarine;
   
       input {
-        border: 1px solid red;
+        outline: 1px solid red;
       }
     }
   
     .social-links {
-      border: 1px solid green;
+      outline: 1px solid green;
     }
   }
 }
