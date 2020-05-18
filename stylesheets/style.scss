@@ -47,12 +47,25 @@ header {
   align-items: center;
 }
 
-.about {
-  border: 1px solid green;
+#projects {
+  border: 1px solid blue;
+
+  .development {
+    .pro-dev {
+      border: 1px solid aqua;
+    }
+  }
+
+  .film {
+    .pro-film {
+      border: 1px solid aqua;
+    }
+  }
+
 }
 
-.work {
-  border: 1px solid blue;
+#experience {
+  border: 1px solid green;
 
   .work-container {
     border: 1px solid red;
@@ -60,10 +73,10 @@ header {
 }
 
 .skills {
-  border: 1px solid orange;
+  border: 1px solid yellow;
 }
 
-.education {
+#education {
   border: 1px solid blue;
 
   .education-container {
@@ -71,44 +84,24 @@ header {
   }
 }
 
-.projects {
-  border: 1px solid red;
-
-  .development {
-    border: 16px solid purple;
-  }
-
-  .film {
-    border: 16px solid green;
-  }
-
-  .project {
-    border: 1px solid aqua;
-  }
-}
-
-.contact {
-  border: 1px solid blue;
-  padding: 0 64px;
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-
-    input {
-      border: 1px solid red;
-    }
-  }
-
-  .social-links {
+#info {
+  .about {
     border: 1px solid green;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-      font-size: 6em;
-      color: black;
+  }
+  
+  .contact {
+    border: 1px solid blue;
+  
+    .contact-form {
+      border: 1px solid aquamarine;
+  
+      input {
+        border: 1px solid red;
+      }
+    }
+  
+    .social-links {
+      border: 1px solid green;
     }
   }
 }
