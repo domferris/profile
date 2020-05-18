@@ -28,8 +28,16 @@ h4, h5, h6 {
 }
 
 p {
-  color: rgb(25, 25, 25);
+  color: rgb(65, 65, 65);
 }
+
+.hidden {
+  display: none;
+}
+
+////////////////////
+// SECTIONS
+////////////////////
 
 header {
   border: 1px solid red;
@@ -39,16 +47,27 @@ header {
   align-items: center;
 }
 
-.main {
+#projects {
   border: 1px solid blue;
+
+  .development {
+    border: 1px solid red;
+    
+    .pro-dev {
+      border: 1px solid aqua;
+    }
+  }
+
+  .film {
+    .pro-film {
+      border: 1px solid aqua;
+    }
+  }
+
 }
 
-.about {
+#experience {
   border: 1px solid green;
-}
-
-.work {
-  border: 1px solid blue;
 
   .work-container {
     border: 1px solid red;
@@ -56,10 +75,10 @@ header {
 }
 
 .skills {
-  border: 1px solid orange;
+  border: 1px solid yellow;
 }
 
-.education {
+#education {
   border: 1px solid blue;
 
   .education-container {
@@ -67,44 +86,24 @@ header {
   }
 }
 
-.projects {
-  border: 1px solid red;
-
-  .development {
-    border: 16px solid purple;
-  }
-
-  .film {
-    border: 16px solid green;
-  }
-
-  .project {
-    border: 1px solid aqua;
-  }
-}
-
-.contact {
-  border: 1px solid blue;
-  padding: 0 64px;
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-
-    input {
-      border: 1px solid red;
-    }
-  }
-
-  .social-links {
+#info {
+  .about {
     border: 1px solid green;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-      font-size: 6em;
-      color: black;
+  }
+  
+  .contact {
+    border: 1px solid blue;
+  
+    .contact-form {
+      border: 1px solid aquamarine;
+  
+      input {
+        border: 1px solid red;
+      }
+    }
+  
+    .social-links {
+      border: 1px solid green;
     }
   }
 }
