@@ -50,67 +50,10 @@ section .section-container {
 }
 
 header {
-  outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#projects {
-  outline: 1px solid blue;
-}
-#projects .development {
-  outline: 1px solid red;
-}
-#projects .development .proj-dev {
-  outline: 1px solid green;
-}
-#projects .film {
-  outline: 1px solid red;
-}
-#projects .film .proj-film {
-  outline: 1px solid aqua;
-}
-#projects .photo {
-  outline: 1px solid red;
-}
-
-#experience {
-  outline: 1px solid green;
-}
-#experience .work-container {
-  outline: 1px solid red;
-}
-
-.skills {
-  outline: 1px solid yellow;
-}
-
-#education {
-  outline: 1px solid blue;
-}
-#education .education-container {
-  outline: 1px solid green;
-}
-
-#info {
-  outline: 1px solid purple;
-}
-#info .about {
-  outline: 1px solid green;
-}
-#info .contact {
-  outline: 1px solid blue;
-}
-#info .contact .contact-form {
-  outline: 1px solid aquamarine;
-}
-#info .contact .contact-form input {
-  outline: 1px solid red;
-}
-#info .contact .social-links {
-  outline: 1px solid green;
 }
 
 /*# sourceMappingURL=style.css.map */
