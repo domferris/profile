@@ -24,7 +24,9 @@ h3 {
   font-weight: 400;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 1em;
   font-weight: 400;
 }
@@ -71,7 +73,7 @@ header {
 
     ul > li:not(:last-child) {
       margin-bottom: 0.2em;
-      }
+    }
   }
 }
 
@@ -88,7 +90,7 @@ header {
 
   .development {
     outline: 1px solid red;
-    
+
     .proj-dev {
       outline: 1px solid green;
     }
@@ -126,7 +128,7 @@ header {
     }
 
     .work-container > ul > li:not(:last-child) {
-    margin-bottom: 0.2em;
+      margin-bottom: 0.2em;
     }
   }
 
@@ -172,21 +174,39 @@ header {
   .about {
     outline: 1px solid green;
   }
-  
+
   .contact {
-    outline: 1px solid blue;
-  
+    margin: 2em 0 1em 0;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
     .contact-form {
-      outline: 1px solid aquamarine;
-  
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
       input {
         outline: 1px solid red;
       }
+
+      #fname,
+      #lname,
+      #email {
+        width: 50%;
+      }
+
+      #message {
+        height: 6em;
+      }
     }
-  
-    .social-links {
-      outline: 1px solid green;
-    }
+  }
+
+  .social-links {
+    a {
+    font-size: 1.5em;
+  }
   }
 }
 
