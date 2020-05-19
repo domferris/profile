@@ -67,7 +67,7 @@ section {
 ////////////////////
 
 header {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@ header {
 }
 
 #projects {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 
   .section-container > ul {
     list-style: none;
@@ -94,28 +94,28 @@ header {
   }
 
   .development {
-    outline: 1px solid red;
+    // outline: 1px solid red;
 
     .proj-dev {
-      outline: 1px solid green;
+      // outline: 1px solid green;
     }
   }
 
   .film {
-    outline: 1px solid red;
+    // outline: 1px solid red;
 
     .proj-film {
-      outline: 1px solid aqua;
+      // outline: 1px solid aqua;
     }
   }
 
   .photo {
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 }
 
 #experience {
-  outline: 1px solid green;
+  // outline: 1px solid green;
 
   .section-container > ul {
     list-style: none;
@@ -138,20 +138,20 @@ header {
   }
 
   .work-container {
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 }
 
 .skills {
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   .section-container {
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 }
 
 #education {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   .section-container > ul {
     list-style: none;
 
@@ -169,21 +169,21 @@ header {
   }
 
   .education-container {
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 }
 
 #info {
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   .about {
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 
   .contact {
     margin: 2em 0 1em 0;
 
-    h2 {
+    h3 {
       margin-bottom: 1em;
     }
 
@@ -194,21 +194,24 @@ header {
     }
 
     .contact-form {
+      // outline: 1px solid blue;
       width: 60%;
-      outline: 1px solid blue;
 
       .name {
-        outline: 1px solid green;
-        width: 80%;
+        // outline: 1px solid green;
+        width: 75%;
+        margin-bottom: 0.5em;
+        display: flex;
+        justify-content: space-between;
 
         #fname,
         #lname {
-          margin-bottom: 0.5em;
+          width: 49%;
         }
       }
-      
+
       #email {
-        width: 80%;
+        width: 75%;
         margin-bottom: 0.5em;
       }
 
@@ -248,7 +251,8 @@ header {
     margin: 0 10%;
   }
 
-  .contact-form {
-    width: 100%;
-  }
+  // TODO
+  // .contact-form {
+  //   width: 100%;
+  // }
 }

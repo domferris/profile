@@ -61,7 +61,6 @@ section .section-container {
 }
 
 header {
-  outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -74,33 +73,11 @@ header nav ul > li:not(:last-child) {
   margin-bottom: 0.2em;
 }
 
-#projects {
-  outline: 1px solid blue;
-}
 #projects .section-container > ul {
   list-style: none;
 }
 #projects .section-container > ul > li:not(:last-child) {
   margin-bottom: 0.5em;
-}
-#projects .development {
-  outline: 1px solid red;
-}
-#projects .development .proj-dev {
-  outline: 1px solid green;
-}
-#projects .film {
-  outline: 1px solid red;
-}
-#projects .film .proj-film {
-  outline: 1px solid aqua;
-}
-#projects .photo {
-  outline: 1px solid red;
-}
-
-#experience {
-  outline: 1px solid green;
 }
 #experience .section-container > ul {
   list-style: none;
@@ -117,20 +94,6 @@ header nav ul > li:not(:last-child) {
 #experience .section-container > ul .work-container > ul > li:not(:last-child) {
   margin-bottom: 0.2em;
 }
-#experience .work-container {
-  outline: 1px solid red;
-}
-
-.skills {
-  outline: 1px solid red;
-}
-.skills .section-container {
-  outline: 1px solid green;
-}
-
-#education {
-  outline: 1px solid blue;
-}
 #education .section-container > ul {
   list-style: none;
 }
@@ -143,20 +106,10 @@ header nav ul > li:not(:last-child) {
 #education .section-container > ul > li:not(:last-child) {
   margin-bottom: 1.8em;
 }
-#education .education-container {
-  outline: 1px solid green;
-}
-
-#info {
-  outline: 1px solid red;
-}
-#info .about {
-  outline: 1px solid green;
-}
 #info .contact {
   margin: 2em 0 1em 0;
 }
-#info .contact h2 {
+#info .contact h3 {
   margin-bottom: 1em;
 }
 #info .contact input,
@@ -166,18 +119,19 @@ header nav ul > li:not(:last-child) {
 }
 #info .contact .contact-form {
   width: 60%;
-  outline: 1px solid blue;
 }
 #info .contact .contact-form .name {
-  outline: 1px solid green;
-  width: 80%;
+  width: 75%;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
 }
 #info .contact .contact-form .name #fname,
 #info .contact .contact-form .name #lname {
-  margin-bottom: 0.5em;
+  width: 49%;
 }
 #info .contact .contact-form #email {
-  width: 80%;
+  width: 75%;
   margin-bottom: 0.5em;
 }
 #info .contact .contact-form #message {
@@ -202,10 +156,6 @@ header nav ul > li:not(:last-child) {
 @media screen and (max-width: 600px) {
   body {
     margin: 0 10%;
-  }
-
-  .contact-form {
-    width: 100%;
   }
 }
 
