@@ -1,6 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -37,11 +42,11 @@ p {
 }
 
 section {
-  min-height: 75vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 13% 0 17% 0;
+  padding: 25% 0 40% 0;
 }
 section > h2 {
   margin-bottom: 2em;
@@ -143,7 +148,7 @@ header nav ul > li:not(:last-child) {
 }
 
 #info {
-  outline: 1px solid purple;
+  outline: 1px solid red;
 }
 #info .about {
   outline: 1px solid green;
@@ -154,21 +159,34 @@ header nav ul > li:not(:last-child) {
 #info .contact h2 {
   margin-bottom: 1em;
 }
+#info .contact input,
+#info .contact textarea {
+  padding: 0.5em;
+  font-size: 0.8em;
+}
 #info .contact .contact-form {
   width: 60%;
-  display: flex;
-  flex-direction: column;
+  outline: 1px solid blue;
 }
-#info .contact .contact-form input {
-  outline: 1px solid red;
+#info .contact .contact-form .name {
+  outline: 1px solid green;
+  width: 80%;
 }
-#info .contact .contact-form #fname,
-#info .contact .contact-form #lname,
+#info .contact .contact-form .name #fname,
+#info .contact .contact-form .name #lname {
+  margin-bottom: 0.5em;
+}
 #info .contact .contact-form #email {
-  width: 50%;
+  width: 80%;
+  margin-bottom: 0.5em;
 }
 #info .contact .contact-form #message {
   height: 6em;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+#info .contact .contact-form input[type=submit] {
+  font-size: 1em;
 }
 #info .social-links a {
   font-size: 1.5em;
@@ -177,13 +195,17 @@ header nav ul > li:not(:last-child) {
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
   body {
-    padding: 0 20%;
+    margin: 0 20%;
   }
 }
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   body {
-    padding: 0 10%;
+    margin: 0 10%;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
 

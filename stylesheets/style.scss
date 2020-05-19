@@ -1,6 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -37,11 +42,11 @@ p {
 }
 
 section {
-  min-height: 75vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 13% 0 17% 0;
+  padding: 25% 0 40% 0;
 
   > h2 {
     margin-bottom: 2em;
@@ -169,7 +174,7 @@ header {
 }
 
 #info {
-  outline: 1px solid purple;
+  outline: 1px solid red;
 
   .about {
     outline: 1px solid green;
@@ -182,31 +187,47 @@ header {
       margin-bottom: 1em;
     }
 
+    input,
+    textarea {
+      padding: 0.5em;
+      font-size: 0.8em;
+    }
+
     .contact-form {
       width: 60%;
-      display: flex;
-      flex-direction: column;
+      outline: 1px solid blue;
 
-      input {
-        outline: 1px solid red;
+      .name {
+        outline: 1px solid green;
+        width: 80%;
+
+        #fname,
+        #lname {
+          margin-bottom: 0.5em;
+        }
       }
-
-      #fname,
-      #lname,
+      
       #email {
-        width: 50%;
+        width: 80%;
+        margin-bottom: 0.5em;
       }
 
       #message {
         height: 6em;
+        width: 100%;
+        margin-bottom: 0.6em;
+      }
+
+      input[type="submit"] {
+        font-size: 1em;
       }
     }
   }
 
   .social-links {
     a {
-    font-size: 1.5em;
-  }
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -217,13 +238,17 @@ header {
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
   body {
-    padding: 0 20%;
+    margin: 0 20%;
   }
 }
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   body {
-    padding: 0 10%;
+    margin: 0 10%;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
