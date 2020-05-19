@@ -4,7 +4,9 @@
 }
 
 body {
-  padding: 0 20%;
+  max-width: 1000px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
 }
 
 h1 {
@@ -42,7 +44,8 @@ section > h2 {
   margin-bottom: 2em;
 }
 section .section-container {
-  margin-left: 2em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .hidden {
@@ -54,6 +57,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* On screens that are 1667px or less */
+@media screen and (max-width: 1667px) {
+  body {
+    padding: 0 20%;
+  }
+}
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
