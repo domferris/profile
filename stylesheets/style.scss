@@ -31,6 +31,22 @@ p {
   color: rgb(65, 65, 65);
 }
 
+section {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 13% 0 17% 0;
+
+  > h2 {
+    margin-bottom: 2em;
+  }
+
+  .section-container {
+    margin-left: 2em;
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -40,7 +56,7 @@ p {
 ////////////////////
 
 header {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,62 +64,69 @@ header {
 }
 
 #projects {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 
   .development {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     
     .proj-dev {
-      outline: 1px solid green;
+      // outline: 1px solid green;
     }
   }
 
   .film {
+    // outline: 1px solid red;
+
     .proj-film {
-      outline: 1px solid aqua;
+      // outline: 1px solid aqua;
     }
   }
 
+  .photo {
+    // outline: 1px solid red;
+  }
 }
 
 #experience {
-  outline: 1px solid green;
+  // outline: 1px solid green;
 
   .work-container {
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 }
 
 .skills {
-  outline: 1px solid yellow;
+  // outline: 1px solid yellow;
 }
 
 #education {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 
   .education-container {
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 }
 
 #info {
+  // outline: 1px solid purple;
+
   .about {
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
   
   .contact {
-    outline: 1px solid blue;
+    // outline: 1px solid blue;
   
     .contact-form {
-      outline: 1px solid aquamarine;
+      // outline: 1px solid aquamarine;
   
       input {
-        outline: 1px solid red;
+        // outline: 1px solid red;
       }
     }
   
     .social-links {
-      outline: 1px solid green;
+      // outline: 1px solid green;
     }
   }
 }
