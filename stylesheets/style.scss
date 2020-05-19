@@ -75,11 +75,16 @@ header {
   }
 
   .film {
+    outline: 1px solid red;
+
     .proj-film {
       outline: 1px solid aqua;
     }
   }
 
+  .photo {
+    outline: 1px solid red;
+  }
 }
 
 #experience {

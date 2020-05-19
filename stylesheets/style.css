@@ -66,8 +66,14 @@ header {
 #projects .development .proj-dev {
   outline: 1px solid green;
 }
+#projects .film {
+  outline: 1px solid red;
+}
 #projects .film .proj-film {
   outline: 1px solid aqua;
+}
+#projects .photo {
+  outline: 1px solid red;
 }
 
 #experience {
