@@ -139,6 +139,11 @@ header {
 
   .work-container {
     // outline: 1px solid red;
+
+    > ul {
+      margin-left: 1.5em;
+      list-style: disc;
+    }
   }
 }
 
@@ -155,6 +160,10 @@ header {
   .section-container > ul {
     list-style: none;
 
+    > li:not(:last-child) {
+      margin-bottom: 1.8em;
+    }
+
     h2 {
       margin-bottom: 0.1em;
     }
@@ -162,22 +171,23 @@ header {
     h3 {
       margin-bottom: 0.5em;
     }
-
-    > li:not(:last-child) {
-      margin-bottom: 1.8em;
-    }
   }
 
   .education-container {
     // outline: 1px solid green;
+
+    p {
+      margin-left: 0.5em;
+    }
   }
 }
 
 #info {
   // outline: 1px solid red;
 
-  .about {
+  .bio {
     // outline: 1px solid green;
+    text-indent: 2em;
   }
 
   .contact {
