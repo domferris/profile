@@ -368,16 +368,15 @@
   </section>
 
   <script>
-    // TODO: PROJECTS LIST TOGGLE
-    projectsList = document.querySelectorAll('.projects-list');
-    projectsSection = document.querySelectorAll('.projects-section');
+    // REPO NUMBER RETRIEVAL VIA GITHUB API
+    // https://api.github.com/users/domferris
 
-    const projectsToggle = (event) => {
-      console.log(event);
-      // if proj section is child of proj list, toggle hidden on proj section
-    };
-
-    projectsList.forEach(project => project.addEventListener('click', projectsToggle));
+    // CONTRIBUTIONS NUMBER RETRIEVAL VIA GITHUB SCRAPING
+    // https://github.com/domferris
+    // <h2 class="f4 text-normal mb-2">
+    //   _#_ contributions
+    //     in the last year
+    // </h2>
 
     // SMOOTH SCROLLING
     const navLinks = document.querySelectorAll('nav a[href*="#"')
@@ -390,6 +389,17 @@
           500);
       });
     });
+
+    // TODO: PROJECTS LIST TOGGLE
+    projectsList = document.querySelectorAll('.projects-list');
+    projectsSection = document.querySelectorAll('.projects-section');
+
+    const projectsToggle = (event) => {
+      console.log(event);
+      // if proj section is child of proj list, toggle hidden on proj section
+    };
+
+    projectsList.forEach(project => project.addEventListener('click', projectsToggle));
   </script>
 </body>
 
