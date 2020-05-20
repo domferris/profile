@@ -24,7 +24,7 @@
   <header>
     <div>
       <h1>Dominic Ferris, Full-Stack Developer</h1>
-      <h3>___ repositories, ___ contributions in the last year</h3>
+      <h3><span class="repos-num"></span> repositories, <span class="contributions-num"></span> contributions in the last year</h3>
       <nav>
         <ul>
           <li>
@@ -369,7 +369,14 @@
 
   <script>
     // REPO NUMBER RETRIEVAL VIA GITHUB API
-    // https://api.github.com/users/domferris
+    const githubAPIUrl = 'https://api.github.com/users/domferris';
+
+    fetch(githubAPIUrl)
+    .then(response => response.json())
+    .then((data) => {
+      const reposNum = document.querySelector('.repos-num');
+      reposNum.innerHTML = data.public_repos
+    });
 
     // CONTRIBUTIONS NUMBER RETRIEVAL VIA GITHUB SCRAPING
     // https://github.com/domferris
