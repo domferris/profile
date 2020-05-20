@@ -15,6 +15,9 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="stylesheets/style.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -332,9 +335,12 @@
       <div class="bio">
         <p>
           I am a visual artist turned developer. After six years of working as a director, editor, and
-          photographer in Los Angeles I decided to take my journey into technology. I attended the 9-week intensive coding
-          bootcamp at Le Wagon’s London campus to learn full-stack development and jump-start the next chapter in my life.
-          I am interested in using my passion and newfound skills to contribute to and maximize the effectiveness of human
+          photographer in Los Angeles I decided to take my journey into technology. I attended the 9-week intensive
+          coding
+          bootcamp at Le Wagon’s London campus to learn full-stack development and jump-start the next chapter in my
+          life.
+          I am interested in using my passion and newfound skills to contribute to and maximize the effectiveness of
+          human
           initiatives I believe in and utilize tech in a responsible manner.
         </p>
       </div>
@@ -355,14 +361,14 @@
       </div>
       <div class="social-links">
         <a href="https://github.com/domferris" target="_blank"><i class="fab fa-github-square social-link"></i></a>
-        <a href="https://www.linkedin.com/in/domferris/" target="_blank"><i
-            class="fab fa-linkedin social-link"></i></a>
+        <a href="https://www.linkedin.com/in/domferris/" target="_blank"><i class="fab fa-linkedin social-link"></i></a>
         <a href="https://www.instagram.com/domferris/" target="_blank"><i class="fab fa-instagram social-link"></i></a>
       </div>
     </div>
   </section>
 
   <script>
+    // TODO: PROJECTS LIST TOGGLE
     projectsList = document.querySelectorAll('.projects-list');
     projectsSection = document.querySelectorAll('.projects-section');
 
@@ -372,6 +378,18 @@
     };
 
     projectsList.forEach(project => project.addEventListener('click', projectsToggle));
+
+    // SMOOTH SCROLLING
+    const navLinks = document.querySelectorAll('nav a[href*="#"')
+
+    navLinks.forEach(navLink => {
+      $(navLink).click(() => {
+        $('html,body').animate({
+          scrollTop: $(navLink.getAttribute("href")).offset().top
+        },
+          500);
+      });
+    });
   </script>
 </body>
 
