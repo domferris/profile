@@ -46,10 +46,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 25% 0 40% 0;
+  padding: auto 0;
 
   > h2 {
-    margin-bottom: 2em;
+    margin: 2em 0 2em 0;
   }
 
   .section-container {
