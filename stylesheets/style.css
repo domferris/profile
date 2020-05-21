@@ -1,16 +1,19 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
   max-width: 1000px;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -43,14 +46,23 @@ p {
 
 section {
   min-height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 25% 0 40% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto 0;
 }
+
 section > h2 {
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
+
 section .section-container {
   width: 90%;
   margin: 0 auto;
@@ -62,13 +74,21 @@ section .section-container {
 
 header {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header nav {
   margin: 1em 0 0 1.5em;
 }
+
 header nav ul > li:not(:last-child) {
   margin-bottom: 0.2em;
 }
@@ -76,24 +96,31 @@ header nav ul > li:not(:last-child) {
 #projects .section-container > ul {
   list-style: none;
 }
+
 #projects .section-container > ul > li:not(:last-child) {
   margin-bottom: 0.5em;
 }
+
 #experience .section-container > ul {
   list-style: none;
 }
+
 #experience .section-container > ul h2 {
   margin-bottom: 0.1em;
 }
+
 #experience .section-container > ul h3 {
   margin-bottom: 0.5em;
 }
+
 #experience .section-container > ul > li:not(:last-child) {
   margin-bottom: 1.8em;
 }
+
 #experience .section-container > ul .work-container > ul > li:not(:last-child) {
   margin-bottom: 0.2em;
 }
+
 #experience .work-container > ul {
   margin-left: 1.5em;
   list-style: disc;
@@ -102,15 +129,19 @@ header nav ul > li:not(:last-child) {
 #education .section-container > ul {
   list-style: none;
 }
+
 #education .section-container > ul > li:not(:last-child) {
   margin-bottom: 1.8em;
 }
+
 #education .section-container > ul h2 {
   margin-bottom: 0.1em;
 }
+
 #education .section-container > ul h3 {
   margin-bottom: 0.5em;
 }
+
 #education .education-container p {
   margin-left: 0.5em;
 }
@@ -118,42 +149,56 @@ header nav ul > li:not(:last-child) {
 #info .bio {
   text-indent: 2em;
 }
+
 #info .contact {
   margin: 2em 0 1em 0;
 }
+
 #info .contact h3 {
   margin-bottom: 1em;
 }
+
 #info .contact input,
 #info .contact textarea {
   padding: 0.5em;
   font-size: 0.8em;
 }
+
 #info .contact .contact-form {
   width: 60%;
 }
+
 #info .contact .contact-form .name {
   width: 75%;
   margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 #info .contact .contact-form .name #fname,
 #info .contact .contact-form .name #lname {
   width: 49%;
 }
+
 #info .contact .contact-form #email {
   width: 75%;
   margin-bottom: 0.5em;
 }
+
 #info .contact .contact-form #message {
   height: 6em;
   width: 100%;
   margin-bottom: 0.6em;
 }
-#info .contact .contact-form input[type=submit] {
+
+#info .contact .contact-form input[type="submit"] {
   font-size: 1em;
 }
+
 #info .social-links a {
   font-size: 1.5em;
 }
@@ -164,11 +209,11 @@ header nav ul > li:not(:last-child) {
     margin: 0 20%;
   }
 }
+
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   body {
     margin: 0 10%;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
