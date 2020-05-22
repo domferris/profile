@@ -20,7 +20,7 @@ main {
   margin: 0 auto;
 }
 
-.side-nav {
+.alt-nav {
   position: fixed;
   left: 1.5em;
   height: 100vh;
@@ -234,7 +234,7 @@ header nav ul > li:not(:last-child) {
   main {
     margin: 0 10%;
   }
-  .side-nav {
+  .alt-nav {
     outline: 1px solid red;
     position: fixed;
     left: 0;
@@ -247,7 +247,7 @@ header nav ul > li:not(:last-child) {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .side-nav li {
+  .alt-nav li {
     display: inline;
   }
 }
