@@ -8,16 +8,19 @@ html {
   box-sizing: inherit;
 }
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
+body {
   transition: all 0.5s ease-in-out;
 }
 
-.side-nav {
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.alt-nav {
   // outline: 1px solid red;
   position: fixed;
-  left: 5%;
+  left: 1.5em;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -260,15 +263,29 @@ header {
 
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
-  body {
+  main {
     margin: 0 20%;
   }
 }
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-  body {
+  main {
     margin: 0 10%;
+  }
+
+  .alt-nav {
+    outline: 1px solid red;
+    position: fixed;
+    left: 0;
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline;
+    }
   }
 
   // TODO

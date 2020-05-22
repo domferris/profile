@@ -9,9 +9,11 @@ window.addEventListener("scroll", (event) => {
 $(window).scroll(function () {
   if ($(this).scrollTop() > window.innerHeight * 0.6) {
     $("header div").fadeOut();
+    // $(".side-nav").fadeIn();
     $(".side-nav").fadeIn();
   } else {
     $("header div").fadeIn();
+    // $(".side-nav").fadeOut();
     $(".side-nav").fadeOut();
   }
 });

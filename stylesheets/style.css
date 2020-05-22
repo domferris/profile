@@ -10,16 +10,19 @@ html {
           box-sizing: inherit;
 }
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
+body {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .side-nav {
   position: fixed;
-  left: 5%;
+  left: 1.5em;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,15 +224,31 @@ header nav ul > li:not(:last-child) {
 
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
-  body {
+  main {
     margin: 0 20%;
   }
 }
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-  body {
+  main {
     margin: 0 10%;
+  }
+  .side-nav {
+    outline: 1px solid red;
+    position: fixed;
+    left: 0;
+    height: 10%;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .side-nav li {
+    display: inline;
   }
 }
 /*# sourceMappingURL=style.css.map */
