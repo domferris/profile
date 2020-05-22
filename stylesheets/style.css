@@ -10,11 +10,28 @@ html {
           box-sizing: inherit;
 }
 
-body {
+main {
   max-width: 1000px;
   margin: 0 auto;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.side-nav {
+  outline: 5pc solid red;
+  position: fixed;
+  left: 5%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {

@@ -8,10 +8,20 @@ html {
   box-sizing: inherit;
 }
 
-body {
+main {
   max-width: 1000px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
+}
+
+.side-nav {
+  outline: 5pc solid red;
+  position: fixed;
+  left: 5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
