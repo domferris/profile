@@ -366,6 +366,15 @@
           500);
       });
     });
+
+    // EXPRESS CONNECTION
+    const backend = 'http://localhost:3000/github_scrape'
+
+    fetch(backend)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      });
   </script>
 </body>
 
