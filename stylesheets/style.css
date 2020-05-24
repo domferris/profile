@@ -136,6 +136,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.23s ease-in-out;
+  transition: all 0.23s ease-in-out;
 }
 
 header nav {
@@ -144,6 +147,10 @@ header nav {
 
 header nav ul > li:not(:last-child) {
   margin-bottom: 0.2em;
+}
+
+header.active {
+  opacity: 100%;
 }
 
 #projects .section-container > ul {
