@@ -1,5 +1,5 @@
 // SMOOTH NAV SCROLLING
-const navLinks = document.querySelectorAll('nav a[href*="#"');
+const navLinks = document.querySelectorAll('nav a[href*="#"]');
 
 navLinks.forEach((navLink) => {
   $(navLink).click(() => {

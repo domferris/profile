@@ -18,7 +18,24 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.alt-nav {
+.side-nav {
+  // outline: 1px solid red;
+  position: fixed;
+  left: -5em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+
+  &.active {
+    left: 1.5em;
+    opacity: 100%;
+  }
+}
+
+.bottom-nav {
   // outline: 1px solid red;
   position: fixed;
   left: -5em;
@@ -279,10 +296,27 @@ header {
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   main {
-    margin: 0 5% 0 15%;
+    margin: 0 10%;
   }
 
-  .alt-nav {
+  .side-nav {
+    // outline: 1px solid red;
+    position: fixed;
+    left: -5em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  
+    &.active {
+      left: 1.5em;
+      opacity: 100%;
+    }
+  }
+  
+  .bottom-nav {
     outline: 1px solid red;
     background: white;
     position: fixed;

@@ -7,27 +7,41 @@ $(window).scroll(function () {
   }
 });
 
-// SHOW/HIDE ALT NAV
+// SHOW/HIDE SIDE NAV
 window.addEventListener("scroll", (event) => {
-  const altNav = document.querySelector(".alt-nav");
+  const sideNav = document.querySelector(".side-nav");
   // console.log(event.currentTarget.innerHeight);
   if (scrollY < event.currentTarget.innerHeight * 0.375) {
-    altNav.classList.remove("active");
+    sideNav.classList.remove("active");
   } else {
-    altNav.classList.add("active");
+    sideNav.classList.add("active");
   }
 });
 
 window.addEventListener("DOMContentLoaded", (event) => {
+  // const sideNav = document.querySelector(".side-nav");
+  // const botNav = document.querySelector(".bottom-nav");
+
   if (window.innerWidth <= 600) {
     console.log("mobile loaded!");
+  } else {
+    console.log(">= tablet loaded!");
   }
 });
 
 window.onresize = () => {
-  if (window.innerWidth <= 600) {
+  const sideNav = document.querySelector(".side-nav");
+  const botNav = document.querySelector(".bottom-nav");
+
+  if (window.innerWidth <= 600 && window.scrollY > window.innerHeight * 0.375) {
     console.log("mobile hello");
+
+    sideNav.classList.remove("active");
+    botNav.classList.add("active");
   } else {
     console.log("mobile goodbye");
+
+    sideNav.classList.add("active");
+    botNav.classList.remove("active");
   }
 };
