@@ -18,11 +18,13 @@ body {
 main {
   max-width: 1000px;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .alt-nav {
   position: fixed;
-  left: 1.5em;
+  left: -5em;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +36,14 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.alt-nav.active {
+  left: 1.5em;
+  opacity: 100%;
 }
 
 h1 {
@@ -233,22 +243,6 @@ header nav ul > li:not(:last-child) {
 @media screen and (max-width: 600px) {
   main {
     margin: 0 10%;
-  }
-  .alt-nav {
-    outline: 1px solid red;
-    position: fixed;
-    left: 0;
-    height: 10%;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .alt-nav li {
-    display: inline;
   }
 }
 /*# sourceMappingURL=style.css.map */
