@@ -279,25 +279,37 @@ header {
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   main {
-    margin: 0 10%;
+    margin: 0 5% 0 15%;
   }
 
-  // .alt-nav {
-  //   // outline: 1px solid red;
-  //   position: fixed;
-  //   left: -5em;
-  //   height: 100vh;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   transition: all 0.2s ease-in-out;
-  //   opacity: 0;
+  .alt-nav {
+    outline: 1px solid red;
+    background: white;
+    position: fixed;
+    left: 0em;
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    bottom: -5em;
   
-  //   &.active {
-  //     left: 1.5em;
-  //     opacity: 100%;
-  //   }
-  // }
+    &.active {
+      left: 0em;
+      bottom: 0;
+      opacity: 100%;
+    }
+
+    li {
+      display: inline;
+    }
+
+    li:not(:last-child) {
+      margin-right: 1%;
+    }
+  }
 
   // TODO
   // .contact-form {

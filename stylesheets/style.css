@@ -242,7 +242,40 @@ header nav ul > li:not(:last-child) {
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   main {
-    margin: 0 10%;
+    margin: 0 5% 0 15%;
+  }
+  .alt-nav {
+    outline: 1px solid red;
+    background: white;
+    position: fixed;
+    left: 0em;
+    height: 10%;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    bottom: -5em;
+  }
+  .alt-nav.active {
+    left: 0em;
+    bottom: 0;
+    opacity: 100%;
+  }
+  .alt-nav li {
+    display: inline;
+  }
+  .alt-nav li:not(:last-child) {
+    margin-right: 1%;
   }
 }
 /*# sourceMappingURL=style.css.map */

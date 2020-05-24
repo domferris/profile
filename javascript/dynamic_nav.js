@@ -17,3 +17,17 @@ window.addEventListener("scroll", (event) => {
     altNav.classList.add("active");
   }
 });
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  if (window.innerWidth <= 600) {
+    console.log("mobile loaded!");
+  }
+});
+
+window.onresize = () => {
+  if (window.innerWidth <= 600) {
+    console.log("mobile hello");
+  } else {
+    console.log("mobile goodbye");
+  }
+};
