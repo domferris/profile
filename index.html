@@ -46,6 +46,11 @@
         <h1>Dominic Ferris, Full-Stack Developer</h1>
         <h3>___ repositories, ___ contributions in the last year</h3>
         <nav>
+
+
+
+
+          
           <ul>
             <li>
               <a href="#projects">Projects</a>
@@ -368,29 +373,12 @@
     </section>
   </main>
 
+  <script src="./javascript/scrape_github.js"></script>
+  <script src="./javascript/github_api.js"></script>
+  <script src="./javascript/scroll.js"></script>
+  <script src="./javascript/projects_toggle.js"></script>
   <script>
-    // TODO: PROJECTS LIST TOGGLE
-    projectsList = document.querySelectorAll('.projects-list');
-    projectsSection = document.querySelectorAll('.projects-section');
-
-    const projectsToggle = (event) => {
-      console.log(event);
-      // if proj section is child of proj list, toggle hidden on proj section
-    };
-
-    projectsList.forEach(project => project.addEventListener('click', projectsToggle));
-
-    // SMOOTH SCROLLING
-    const navLinks = document.querySelectorAll('nav a[href*="#"')
-
-    navLinks.forEach(navLink => {
-      $(navLink).click(() => {
-        $('html,body').animate({
-          scrollTop: $(navLink.getAttribute("href")).offset().top
-        },
-          500);
-      });
-    });
+    console.log("Hi! Nothing to see here.");
   </script>
   <script src="./dynamic_nav.js"></script>
 </body>
