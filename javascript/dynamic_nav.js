@@ -10,13 +10,9 @@ window.addEventListener("scroll", (event) => {
   const botNav = document.querySelector(".bottom-nav");
 
   if (scrollY < event.currentTarget.innerHeight * 0.375) {
-    // sideNav.classList.remove("active");
-    // botNav.classList.remove("active");
     landing.classList.add("active");
   } else {
     landing.classList.remove("active");
-    // sideNav.classList.add("active");
-    // botNav.classList.add("active");
   }
 
   if (landing.classList.contains("active")) {
