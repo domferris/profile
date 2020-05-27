@@ -11,10 +11,72 @@ html {
 }
 
 body {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main {
   max-width: 1000px;
   margin: 0 auto;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.side-nav {
+  position: fixed;
+  left: -5em;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.side-nav.active {
+  left: 1.5em;
+  opacity: 1;
+}
+
+.bottom-nav {
+  background: pink;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  bottom: -10%;
+}
+
+.bottom-nav.active {
+  bottom: -8em;
+}
+
+.bottom-nav li {
+  display: inline;
+}
+
+.bottom-nav li:not(:last-child) {
+  margin-right: 1%;
 }
 
 h1 {
@@ -83,6 +145,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.23s ease-in-out;
+  transition: all 0.23s ease-in-out;
 }
 
 header nav {
@@ -91,6 +156,10 @@ header nav {
 
 header nav ul > li:not(:last-child) {
   margin-bottom: 0.2em;
+}
+
+header.active {
+  opacity: 100%;
 }
 
 #projects .section-container > ul {
@@ -205,15 +274,32 @@ header nav ul > li:not(:last-child) {
 
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
-  body {
+  main {
     margin: 0 20%;
   }
 }
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-  body {
+  main {
     margin: 0 10%;
+  }
+  .side-nav.active {
+    left: -5em;
+  }
+  .bottom-nav {
+    bottom: -10%;
+  }
+  .bottom-nav.active {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  .bottom-nav li {
+    display: inline;
+  }
+  .bottom-nav li:not(:last-child) {
+    margin-right: 1%;
   }
 }
 /*# sourceMappingURL=style.css.map */

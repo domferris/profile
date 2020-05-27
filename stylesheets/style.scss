@@ -9,9 +9,55 @@ html {
 }
 
 body {
+  transition: all 0.5s ease-in-out;
+}
+
+main {
   max-width: 1000px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
+}
+
+.side-nav {
+  // outline: 1px solid red;
+  position: fixed;
+  left: -5em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+
+  &.active {
+    left: 1.5em;
+    opacity: 1;
+  }
+}
+
+.bottom-nav {
+  background: pink;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  bottom: -10%;
+
+  &.active {
+    bottom: -8em;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li:not(:last-child) {
+    margin-right: 1%;
+  }
 }
 
 h1 {
@@ -72,13 +118,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  opacity: 0;
+  transition: all 0.23s ease-in-out;
+  
   nav {
     margin: 1em 0 0 1.5em;
 
     ul > li:not(:last-child) {
       margin-bottom: 0.2em;
     }
+  }
+
+  &.active {
+    opacity: 100%;
   }
 }
 
@@ -250,16 +302,43 @@ header {
 
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
-  body {
+  main {
     margin: 0 20%;
   }
 }
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-  body {
+  main {
     margin: 0 10%;
   }
+
+  .side-nav.active {
+    left: -5em;
+  }
+  
+  .bottom-nav {
+    // opacity: 1;
+    bottom: -10%;
+  
+    &.active {
+      left: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+  
+    li {
+      display: inline;
+    }
+  
+    li:not(:last-child) {
+      margin-right: 1%;
+    }
+  }
+
+
+
+  
 
   // TODO
   // .contact-form {
