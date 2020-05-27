@@ -318,7 +318,6 @@ header {
   }
   
   .bottom-nav {
-    // opacity: 1;
     bottom: -10%;
   
     &.active {
@@ -326,19 +325,7 @@ header {
       bottom: 0;
       opacity: 1;
     }
-  
-    li {
-      display: inline;
-    }
-  
-    li:not(:last-child) {
-      margin-right: 1%;
-    }
   }
-
-
-
-  
 
   // TODO
   // .contact-form {
