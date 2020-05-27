@@ -1,5 +1,5 @@
 // CONTRIBUTIONS NUMBER RETRIEVAL VIA GITHUB SCRAPE
-const backend = "http://localhost:3000/scrape_github";
+const backend = "https://domferris.herokuapp.com/scrape_github";
 
 fetch(backend)
   .then((response) => response.json())
