@@ -43,13 +43,14 @@ main {
 
 .side-nav.active {
   left: 1.5em;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .bottom-nav {
+  background: pink;
   position: fixed;
-  left: -5em;
-  height: 100vh;
+  height: 10%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,17 +58,25 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
+  bottom: -10%;
 }
 
 .bottom-nav.active {
-  left: 1.5em;
-  opacity: 100%;
+  bottom: -8em;
+}
+
+.bottom-nav li {
+  display: inline;
+}
+
+.bottom-nav li:not(:last-child) {
+  margin-right: 1%;
 }
 
 h1 {
@@ -275,54 +284,16 @@ header.active {
   main {
     margin: 0 10%;
   }
-  .side-nav {
-    position: fixed;
-    left: -5em;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-  }
   .side-nav.active {
-    left: 1.5em;
-    opacity: 100%;
+    left: -5em;
   }
   .bottom-nav {
-    outline: 1px solid red;
-    background: white;
-    position: fixed;
-    left: 0em;
-    height: 10%;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    bottom: -5em;
+    bottom: -10%;
   }
   .bottom-nav.active {
-    left: 0em;
+    left: 0;
     bottom: 0;
-    opacity: 100%;
+    opacity: 1;
   }
   .bottom-nav li {
     display: inline;
