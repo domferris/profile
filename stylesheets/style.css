@@ -215,6 +215,10 @@ header.active {
   margin-left: 0.5em;
 }
 
+#info {
+  padding-bottom: 3em;
+}
+
 #info .bio {
   text-indent: 2em;
   margin-bottom: 3em;
