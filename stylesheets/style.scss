@@ -35,7 +35,7 @@ main {
   }
 }
 
-.bottom-nav {
+.mobile-nav {
   background: pink;
   position: fixed;
   height: 10%;
@@ -327,7 +327,7 @@ header {
     left: -5em;
   }
   
-  .bottom-nav {
+  .mobile-nav {
     bottom: -10%;
   
     &.active {

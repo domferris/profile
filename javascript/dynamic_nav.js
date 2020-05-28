@@ -7,7 +7,7 @@
 window.addEventListener("scroll", (event) => {
   const landing = document.querySelector("header");
   const sideNav = document.querySelector(".side-nav");
-  const botNav = document.querySelector(".bottom-nav");
+  const mobileNav = document.querySelector(".mobile-nav");
 
   if (scrollY < event.currentTarget.innerHeight * 0.375) {
     landing.classList.add("active");
@@ -17,9 +17,9 @@ window.addEventListener("scroll", (event) => {
 
   if (landing.classList.contains("active")) {
     sideNav.classList.remove("active");
-    botNav.classList.remove("active");
+    mobileNav.classList.remove("active");
   } else {
     sideNav.classList.add("active");
-    botNav.classList.add("active");
+    mobileNav.classList.add("active");
   }
 });

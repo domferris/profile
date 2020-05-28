@@ -46,7 +46,7 @@ main {
   opacity: 1;
 }
 
-.bottom-nav {
+.mobile-nav {
   background: pink;
   position: fixed;
   height: 10%;
@@ -67,15 +67,15 @@ main {
   bottom: -10%;
 }
 
-.bottom-nav.active {
+.mobile-nav.active {
   bottom: -8em;
 }
 
-.bottom-nav li {
+.mobile-nav li {
   display: inline;
 }
 
-.bottom-nav li:not(:last-child) {
+.mobile-nav li:not(:last-child) {
   margin-right: 1%;
 }
 
@@ -298,10 +298,10 @@ header.active {
   .side-nav.active {
     left: -5em;
   }
-  .bottom-nav {
+  .mobile-nav {
     bottom: -10%;
   }
-  .bottom-nav.active {
+  .mobile-nav.active {
     left: 0;
     bottom: 0;
     opacity: 1;
