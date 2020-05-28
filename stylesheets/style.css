@@ -215,6 +215,10 @@ header.active {
   margin-left: 0.5em;
 }
 
+#info {
+  padding-bottom: 3em;
+}
+
 #info .bio {
   text-indent: 2em;
   margin-bottom: 3em;
@@ -222,7 +226,7 @@ header.active {
 
 #info .contact {
   width: 50%;
-  margin: 0 auto 3em;
+  margin: 0 auto;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

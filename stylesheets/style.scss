@@ -236,6 +236,7 @@ header {
 
 #info {
   // outline: 1px solid red;
+  padding-bottom: 3em;
 
   .bio {
     // outline: 1px solid green;
@@ -245,7 +246,7 @@ header {
 
   .contact {
     width: 50%;
-    margin: 0 auto 3em;
+    margin: 0 auto;
     text-align: center;
     transition: all 0.3s ease-in-out;
 
