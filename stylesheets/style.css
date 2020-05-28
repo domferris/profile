@@ -217,10 +217,15 @@ header.active {
 
 #info .bio {
   text-indent: 2em;
+  margin-bottom: 3em;
 }
 
 #info .contact {
-  margin: 2em 0 1em 0;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #info .contact h3 {
@@ -234,11 +239,10 @@ header.active {
 }
 
 #info .contact .contact-form {
-  width: 60%;
+  margin-bottom: 2em;
 }
 
 #info .contact .contact-form .name {
-  width: 75%;
   margin-bottom: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,7 +258,7 @@ header.active {
 }
 
 #info .contact .contact-form #email {
-  width: 75%;
+  width: 100%;
   margin-bottom: 0.5em;
 }
 
@@ -279,8 +283,15 @@ header.active {
   }
 }
 
-/* On screens that are 600px or less */
-@media screen and (max-width: 600px) {
+/* On screens that are 1309px or less */
+@media screen and (max-width: 1309px) {
+  #info .contact {
+    width: 70%;
+  }
+}
+
+/* On screens that are 800px or less */
+@media screen and (max-width: 800px) {
   main {
     margin: 0 10%;
   }
@@ -295,11 +306,8 @@ header.active {
     bottom: 0;
     opacity: 1;
   }
-  .bottom-nav li {
-    display: inline;
-  }
-  .bottom-nav li:not(:last-child) {
-    margin-right: 1%;
+  #info .contact {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
