@@ -11,15 +11,15 @@ html {
 }
 
 body {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .side-nav {
@@ -49,8 +49,8 @@ main {
 .mobile-nav {
   background: pink;
   position: fixed;
-  height: 10%;
-  width: 100%;
+  right: -20%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,25 +58,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 30%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  opacity: 0;
-  bottom: -10%;
 }
 
-.mobile-nav.active {
-  bottom: -8em;
-}
-
-.mobile-nav li {
-  display: inline;
-}
-
-.mobile-nav li:not(:last-child) {
-  margin-right: 1%;
+.mobile-nav ul {
+  margin-left: 1.5em;
 }
 
 h1 {
@@ -302,13 +290,8 @@ header.active {
   .side-nav.active {
     left: -5em;
   }
-  .mobile-nav {
-    bottom: -10%;
-  }
   .mobile-nav.active {
-    left: 0;
-    bottom: 0;
-    opacity: 1;
+    right: 0;
   }
   #info .contact {
     width: 90%;

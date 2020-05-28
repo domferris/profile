@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .side-nav {
@@ -38,25 +38,19 @@ main {
 .mobile-nav {
   background: pink;
   position: fixed;
-  height: 10%;
-  width: 100%;
+  right: -20%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 30%;
   transition: all 0.2s ease-in-out;
-  opacity: 0;
-  bottom: -10%;
 
   &.active {
-    bottom: -8em;
+    // bottom: -8em;
   }
 
-  li {
-    display: inline;
-  }
-
-  li:not(:last-child) {
-    margin-right: 1%;
+  ul {
+    margin-left: 1.5em;
   }
 }
 
@@ -329,12 +323,8 @@ header {
   }
   
   .mobile-nav {
-    bottom: -10%;
-  
     &.active {
-      left: 0;
-      bottom: 0;
-      opacity: 1;
+      right: 0;
     }
   }
 
