@@ -36,21 +36,29 @@ main {
 }
 
 .mobile-nav {
-  background: pink;
+  background: rgba(0, 0, 0, 0.2);
   position: fixed;
-  right: -20%;
+  right: -30%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   width: 30%;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   &.active {
     // bottom: -8em;
   }
 
+  i {
+    width: 80px;
+    height: 80px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: 1px solid red;
+  }
+
   ul {
-    margin-left: 1.5em;
+    margin: 3em 0 1em 1em;
   }
 }
 
@@ -79,6 +87,14 @@ h6 {
 p {
   color: rgb(65, 65, 65);
   line-height: 1.3em;
+}
+
+a {
+  color: rgb(0,0,238);
+
+  &:active {
+    color: rgb(255,0,0);
+  }
 }
 
 section {
@@ -323,6 +339,8 @@ header {
   }
   
   .mobile-nav {
+    right: -20%;
+
     &.active {
       right: 0;
     }

@@ -47,24 +47,29 @@ main {
 }
 
 .mobile-nav {
-  background: pink;
+  background: rgba(0, 0, 0, 0.2);
   position: fixed;
-  right: -20%;
+  right: -30%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 30%;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-nav i {
+  width: 80px;
+  height: 80px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: 1px solid red;
 }
 
 .mobile-nav ul {
-  margin-left: 1.5em;
+  margin: 3em 0 1em 1em;
 }
 
 h1 {
@@ -92,6 +97,14 @@ h6 {
 p {
   color: #414141;
   line-height: 1.3em;
+}
+
+a {
+  color: #0000ee;
+}
+
+a:active {
+  color: red;
 }
 
 section {
@@ -289,6 +302,9 @@ header.active {
   }
   .side-nav.active {
     left: -5em;
+  }
+  .mobile-nav {
+    right: -20%;
   }
   .mobile-nav.active {
     right: 0;
