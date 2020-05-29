@@ -42,8 +42,12 @@ main {
 }
 
 .side-nav.active {
-  left: 1.5em;
+  left: 2em;
   opacity: 1;
+}
+
+.side-nav li:first-child {
+  margin-bottom: 0.5em;
 }
 
 .mobile-nav {
@@ -70,6 +74,10 @@ main {
 
 .mobile-nav ul {
   margin: 3em 0 1em 1em;
+}
+
+.mobile-nav ul li:first-child {
+  margin-bottom: 0.5em;
 }
 
 h1 {
