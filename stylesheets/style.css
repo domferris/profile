@@ -51,7 +51,7 @@ main {
 }
 
 .mobile-nav {
-  background: rgba(0, 0, 0, 0.2);
+  border-left: 1px solid red;
   position: fixed;
   right: -30%;
   height: 100vh;
@@ -311,10 +311,10 @@ header.active {
   .side-nav.active {
     left: -5em;
   }
-  .mobile-nav {
+  .mobile-nav.active {
     right: -20%;
   }
-  .mobile-nav.active {
+  .mobile-nav.active.open {
     right: 0;
   }
   #info .contact {

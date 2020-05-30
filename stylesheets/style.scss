@@ -40,17 +40,13 @@ main {
 }
 
 .mobile-nav {
-  background: rgba(0, 0, 0, 0.2);
+  border-left: 1px solid red;
   position: fixed;
   right: -30%;
   height: 100vh;
   display: flex;
   width: 30%;
   transition: all 0.4s ease-in-out;
-
-  &.active {
-    // bottom: -8em;
-  }
 
   i {
     width: 80px;
@@ -346,10 +342,10 @@ header {
     left: -5em;
   }
   
-  .mobile-nav {
-    right: -20%;
+  .mobile-nav.active {
+      right: -20%;
 
-    &.active {
+    &.open {
       right: 0;
     }
   }
