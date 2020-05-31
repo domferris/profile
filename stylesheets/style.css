@@ -51,7 +51,6 @@ main {
 }
 
 .mobile-nav {
-  border-left: 1px solid red;
   position: fixed;
   right: -30%;
   height: 100vh;
@@ -63,13 +62,11 @@ main {
   transition: all 0.4s ease-in-out;
 }
 
-.mobile-nav i {
-  width: 80px;
-  height: 80px;
-  color: #000;
-  font-weight: bold;
-  text-transform: uppercase;
-  outline: 1px solid red;
+.mobile-nav .mobile-toggle .line {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px;
 }
 
 .mobile-nav ul {
@@ -312,9 +309,9 @@ header.active {
     left: -5em;
   }
   .mobile-nav.active {
-    right: -20%;
+    right: calc(-30% + 40px);
   }
-  .mobile-nav.active.open {
+  .mobile-nav.open {
     right: 0;
   }
   #info .contact {
