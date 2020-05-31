@@ -11,15 +11,15 @@ html {
 }
 
 body {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .side-nav {
@@ -42,41 +42,39 @@ main {
 }
 
 .side-nav.active {
-  left: 1.5em;
+  left: 2em;
   opacity: 1;
 }
 
-.bottom-nav {
-  background: pink;
+.side-nav li:first-child {
+  margin-bottom: 0.5em;
+}
+
+.mobile-nav {
   position: fixed;
-  height: 10%;
-  width: 100%;
+  right: -30%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  bottom: -10%;
+  width: 30%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.bottom-nav.active {
-  bottom: -8em;
+.mobile-nav .mobile-toggle .line {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px;
 }
 
-.bottom-nav li {
-  display: inline;
+.mobile-nav ul {
+  margin: 3em 0 1em 1em;
 }
 
-.bottom-nav li:not(:last-child) {
-  margin-right: 1%;
+.mobile-nav ul li:first-child {
+  margin-bottom: 0.5em;
 }
 
 h1 {
@@ -104,6 +102,14 @@ h6 {
 p {
   color: #414141;
   line-height: 1.3em;
+}
+
+a {
+  color: #0000ee;
+}
+
+a:active {
+  color: red;
 }
 
 section {
@@ -302,13 +308,11 @@ header.active {
   .side-nav.active {
     left: -5em;
   }
-  .bottom-nav {
-    bottom: -10%;
+  .mobile-nav.active {
+    right: calc(-30% + 40px);
   }
-  .bottom-nav.active {
-    left: 0;
-    bottom: 0;
-    opacity: 1;
+  .mobile-nav.open {
+    right: 0;
   }
   #info .contact {
     width: 90%;

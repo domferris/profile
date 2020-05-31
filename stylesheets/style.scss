@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .side-nav {
@@ -30,33 +30,37 @@ main {
   opacity: 0;
 
   &.active {
-    left: 1.5em;
+    left: 2em;
     opacity: 1;
+  }
+
+  li:first-child {
+    margin-bottom: 0.5em;
   }
 }
 
-.bottom-nav {
-  background: pink;
+.mobile-nav {
+  // border-left: 1px solid red;
   position: fixed;
-  height: 10%;
-  width: 100%;
+  right: -30%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  bottom: -10%;
+  width: 30%;
+  transition: all 0.4s ease-in-out;
 
-  &.active {
-    bottom: -8em;
+  .mobile-toggle .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
   }
 
-  li {
-    display: inline;
-  }
+  ul {
+    margin: 3em 0 1em 1em;
 
-  li:not(:last-child) {
-    margin-right: 1%;
+    li:first-child {
+      margin-bottom: 0.5em;
+    }
   }
 }
 
@@ -85,6 +89,14 @@ h6 {
 p {
   color: rgb(65, 65, 65);
   line-height: 1.3em;
+}
+
+a {
+  color: rgb(0, 0, 238);
+
+  &:active {
+    color: rgb(255, 0, 0);
+  }
 }
 
 section {
@@ -120,7 +132,7 @@ header {
   align-items: center;
   opacity: 0;
   transition: all 0.23s ease-in-out;
-  
+
   nav {
     margin: 1em 0 0 1.5em;
 
@@ -327,14 +339,14 @@ header {
   .side-nav.active {
     left: -5em;
   }
-  
-  .bottom-nav {
-    bottom: -10%;
-  
+
+  .mobile-nav {
     &.active {
-      left: 0;
-      bottom: 0;
-      opacity: 1;
+      right: calc(-30% + 40px);
+    }
+
+    &.open {
+      right: 0;
     }
   }
 
