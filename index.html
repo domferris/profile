@@ -385,16 +385,15 @@
 
         <div class="contact">
           <h3>Contact</h3>
-
-          <div class="contact-form">
+          <form action="http://127.0.0.1:3000/contact" method="post" class="contact-form">
             <div class="name">
-              <input type="text" id="fname" placeholder="First">
-              <input type="text" id="lname" placeholder="Last">
+              <input type="text" id="fname" name="fname" placeholder="First">
+              <input type="text" id="lname" name="lname" placeholder="Last">
             </div>
-            <input type="email" id="email" placeholder="Email*" title="Please enter a valid email" required>
-            <textarea type="text" id="message" placeholder="Message*" required></textarea>
+            <input type="email" id="email" name="email" placeholder="Email*" title="Please enter a valid email" required>
+            <textarea type="text" id="message" name="message" placeholder="Message*" required></textarea>
             <input type="submit">
-          </div>
+          </form>
           <div class="social-links">
             <a href="https://github.com/domferris" target="_blank"><i class="fab fa-github-square social-link"></i></a>
             <a href="https://www.linkedin.com/in/domferris/" target="_blank"><i
