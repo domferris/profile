@@ -168,6 +168,14 @@ header.active {
   opacity: 100%;
 }
 
+#projects .featured-project {
+  margin-bottom: 3em;
+}
+
+#projects .featured-project h2 {
+  margin-bottom: 1em;
+}
+
 #projects .section-container > ul {
   list-style: none;
 }
