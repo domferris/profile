@@ -149,6 +149,14 @@ header {
 #projects {
   // outline: 1px solid blue;
 
+  .featured-project {
+    margin-bottom: 3em;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+
   .section-container > ul {
     list-style: none;
 
