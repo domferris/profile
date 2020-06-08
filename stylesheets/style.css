@@ -52,29 +52,28 @@ main {
 
 .mobile-nav {
   position: fixed;
-  right: -30%;
+  right: -10%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.mobile-nav .mobile-toggle .line {
-  width: 30px;
-  height: 3px;
-  background: black;
-  margin: 5px;
-}
-
 .mobile-nav ul {
-  margin: 3em 0 1em 1em;
+  list-style: none;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
 
 .mobile-nav ul li:first-child {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -325,9 +324,6 @@ header.active {
     left: -5em;
   }
   .mobile-nav.active {
-    right: calc(-30% + 40px);
-  }
-  .mobile-nav.open {
     right: 0;
   }
   #info .contact {
