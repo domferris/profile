@@ -176,6 +176,10 @@ header.active {
   margin-bottom: 1em;
 }
 
+#projects .featured-project .demo-link {
+  display: inline-block;
+}
+
 #projects .section-container > ul {
   list-style: none;
 }

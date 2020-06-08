@@ -39,7 +39,6 @@ main {
 }
 
 .mobile-nav {
-  // border-left: 1px solid red;
   position: fixed;
   right: -30%;
   height: 100vh;
@@ -150,6 +149,10 @@ header {
 
     h2 {
       margin-bottom: 1em;
+    }
+
+    .demo-link {
+      display: inline-block;
     }
   }
 
