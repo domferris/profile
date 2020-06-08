@@ -19,7 +19,6 @@ main {
 }
 
 .side-nav {
-  // outline: 1px solid red;
   position: fixed;
   left: -5em;
   height: 100vh;
@@ -40,26 +39,22 @@ main {
 }
 
 .mobile-nav {
-  // border-left: 1px solid red;
   position: fixed;
-  right: -30%;
+  right: -10%;
   height: 100vh;
   display: flex;
-  width: 30%;
+  justify-content: center;
+  width: 10%;
   transition: all 0.4s ease-in-out;
 
-  .mobile-toggle .line {
-    width: 30px;
-    height: 3px;
-    background: black;
-    margin: 5px;
-  }
-
   ul {
-    margin: 3em 0 1em 1em;
+    list-style: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
 
     li:first-child {
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
     }
   }
 }
@@ -125,7 +120,6 @@ section {
 ////////////////////
 
 header {
-  // outline: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -147,13 +141,15 @@ header {
 }
 
 #projects {
-  // outline: 1px solid blue;
-
   .featured-project {
     margin-bottom: 3em;
 
     h2 {
       margin-bottom: 1em;
+    }
+
+    .demo-link {
+      display: inline-block;
     }
   }
 
@@ -164,31 +160,9 @@ header {
       margin-bottom: 0.5em;
     }
   }
-
-  .development {
-    // outline: 1px solid red;
-
-    .proj-dev {
-      // outline: 1px solid green;
-    }
-  }
-
-  .film {
-    // outline: 1px solid red;
-
-    .proj-film {
-      // outline: 1px solid aqua;
-    }
-  }
-
-  .photo {
-    // outline: 1px solid red;
-  }
 }
 
 #experience {
-  // outline: 1px solid green;
-
   .section-container > ul {
     list-style: none;
 
@@ -210,8 +184,6 @@ header {
   }
 
   .work-container {
-    // outline: 1px solid red;
-
     > ul {
       margin-left: 1.5em;
       list-style: disc;
@@ -219,16 +191,7 @@ header {
   }
 }
 
-.skills {
-  // outline: 1px solid red;
-
-  .section-container {
-    // outline: 1px solid green;
-  }
-}
-
 #education {
-  // outline: 1px solid blue;
   .section-container > ul {
     list-style: none;
 
@@ -246,8 +209,6 @@ header {
   }
 
   .education-container {
-    // outline: 1px solid green;
-
     p {
       margin-left: 0.5em;
     }
@@ -255,11 +216,9 @@ header {
 }
 
 #info {
-  // outline: 1px solid red;
   padding-bottom: 3em;
 
   .bio {
-    // outline: 1px solid green;
     text-indent: 2em;
     margin-bottom: 3em;
   }
@@ -281,11 +240,13 @@ header {
     }
 
     .contact-form {
-      // outline: 1px solid blue;
       margin-bottom: 2em;
 
+      input, textarea {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
       .name {
-        // outline: 1px solid green;
         margin-bottom: 0.5em;
         display: flex;
         justify-content: space-between;
@@ -350,10 +311,6 @@ header {
 
   .mobile-nav {
     &.active {
-      right: calc(-30% + 40px);
-    }
-
-    &.open {
       right: 0;
     }
   }

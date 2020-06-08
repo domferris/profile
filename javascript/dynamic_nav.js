@@ -1,15 +1,10 @@
-// // TRACK WINDOW SCROLL
-// window.addEventListener("scroll", (event) => {
-//   console.log(scrollY);
-// });
-
 // SHOW/HIDE ALT NAVS
 window.addEventListener("scroll", (event) => {
   const landing = document.querySelector("header");
   const sideNav = document.querySelector(".side-nav");
   const mobileNav = document.querySelector(".mobile-nav");
 
-  if (scrollY < event.currentTarget.innerHeight * 0.375) {
+  if (scrollY < event.currentTarget.innerHeight * 0.4) {
     landing.classList.add("active");
   } else {
     landing.classList.remove("active");
