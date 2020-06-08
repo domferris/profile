@@ -260,6 +260,10 @@ header.active {
   margin-bottom: 2em;
 }
 
+#info .contact .contact-form input, #info .contact .contact-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #info .contact .contact-form .name {
   margin-bottom: 0.5em;
   display: -webkit-box;
