@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 16px;
 }
 
 * {
@@ -135,6 +136,10 @@ section .section-container {
   margin: 0 auto;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .hidden {
   display: none;
 }
@@ -173,10 +178,6 @@ header.active {
 
 #projects .featured-project h2 {
   margin-bottom: 1em;
-}
-
-#projects .featured-project .demo-link {
-  display: inline-block;
 }
 
 #projects .section-container > ul {
@@ -317,6 +318,9 @@ header.active {
 
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
+  html {
+    font-size: calc(16px + 3 * ((100vw - 320px) / 680));
+  }
   main {
     margin: 0 10%;
   }

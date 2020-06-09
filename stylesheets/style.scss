@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 * {
@@ -111,6 +112,10 @@ section {
   }
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .hidden {
   display: none;
 }
@@ -146,10 +151,6 @@ header {
 
     h2 {
       margin-bottom: 1em;
-    }
-
-    .demo-link {
-      display: inline-block;
     }
   }
 
@@ -301,6 +302,10 @@ header {
 
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
+  html {
+    font-size: calc(16px + 3 * ((100vw - 320px) / 680));
+  }
+  
   main {
     margin: 0 10%;
   }
