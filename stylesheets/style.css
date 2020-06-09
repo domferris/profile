@@ -1,7 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  font-size: calc(16px + 0.2 * ((100vw - 320px) / 680));
 }
 
 * {
@@ -69,7 +69,7 @@ main {
 .mobile-nav ul {
   list-style: none;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-top: 1em;
 }
 
@@ -78,24 +78,24 @@ main {
 }
 
 h1 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -257,7 +257,7 @@ header.active {
 #info .contact input,
 #info .contact textarea {
   padding: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 #info .contact .contact-form {
@@ -295,11 +295,11 @@ header.active {
 }
 
 #info .contact .contact-form input[type="submit"] {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 #info .social-links a {
-  font-size: 1.5em;
+  font-size: 1.5erm;
 }
 
 /* On screens that are 1667px or less */
@@ -318,9 +318,6 @@ header.active {
 
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
-  html {
-    font-size: calc(16px + 3 * ((100vw - 320px) / 680));
-  }
   main {
     margin: 0 10%;
   }

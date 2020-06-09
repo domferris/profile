@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: calc(16px + 0.2 * ((100vw - 320px) / 680));
 }
 
 * {
@@ -51,7 +51,7 @@ main {
   ul {
     list-style: none;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 1em;
 
     li:first-child {
@@ -61,24 +61,24 @@ main {
 }
 
 h1 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -237,7 +237,7 @@ header {
     input,
     textarea {
       padding: 0.5em;
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
 
     .contact-form {
@@ -270,14 +270,14 @@ header {
       }
 
       input[type="submit"] {
-        font-size: 1em;
+        font-size: 1rem;
       }
     }
   }
 
   .social-links {
     a {
-      font-size: 1.5em;
+      font-size: 1.5erm;
     }
   }
 }
@@ -302,10 +302,6 @@ header {
 
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
-  html {
-    font-size: calc(16px + 3 * ((100vw - 320px) / 680));
-  }
-  
   main {
     margin: 0 10%;
   }
