@@ -268,19 +268,9 @@ header.active {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#info .contact .contact-form .name {
+#info .contact .contact-form #name {
+  width: 100%;
   margin-bottom: 0.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#info .contact .contact-form .name #fname,
-#info .contact .contact-form .name #lname {
-  width: 49%;
 }
 
 #info .contact .contact-form #email {
