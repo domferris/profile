@@ -1,7 +1,7 @@
 // CONTRIBUTIONS NUMBER RETRIEVAL VIA GITHUB SCRAPE
-const backend = "https://domferris.herokuapp.com/scrape_github";
+const backendGitHub = "https://domferris.herokuapp.com/scrape_github";
 
-fetch(backend)
+fetch(backendGitHub)
   .then((response) => response.json())
   .then((data) => {
     const contributionsNum = document.querySelector(".contributions-num");
