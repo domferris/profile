@@ -40,6 +40,7 @@ main {
 }
 
 .mobile-nav {
+  // outline: 1px solid red;
   position: fixed;
   right: -10%;
   height: 100vh;
@@ -51,11 +52,15 @@ main {
   ul {
     list-style: none;
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1em;
+    font-size: 1.4rem;
+    margin-top: 1.5em;
 
     li:first-child {
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    li:not(:first-child) {
+      margin-bottom: 0.4em;
     }
   }
 }
@@ -271,7 +276,7 @@ header {
 
   .social-links {
     a {
-      font-size: 1.5erm;
+      font-size: 1.6rem;
     }
   }
 }
