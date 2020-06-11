@@ -69,12 +69,16 @@ main {
 .mobile-nav ul {
   list-style: none;
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 1em;
+  font-size: 1.4rem;
+  margin-top: 1.5em;
 }
 
 .mobile-nav ul li:first-child {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+.mobile-nav ul li:not(:first-child) {
+  margin-bottom: 0.4em;
 }
 
 h1 {
@@ -289,7 +293,7 @@ header.active {
 }
 
 #info .social-links a {
-  font-size: 1.5erm;
+  font-size: 1.6rem;
 }
 
 /* On screens that are 1667px or less */
