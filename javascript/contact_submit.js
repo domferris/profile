@@ -1,6 +1,8 @@
 // CONTACT SUBMISSION
 const backendContact = "https://domferris.herokuapp.com/contact";
-const contactForm = document.getElementById("contact-form");
+const contactHeader = document.querySelector(".contact > h3");
+const contactForm = document.querySelector(".contact-form");
+const contactConfirmation = document.querySelector(".contact-confirmation");
 
 contactForm.onsubmit = async (event) => {
   event.preventDefault();
@@ -18,8 +20,10 @@ contactForm.onsubmit = async (event) => {
   });
 
   if (response.status == 200) {
-    console.log("success");
+    contactHeader.classList.add("submitted");
+    contactForm.classList.add("submitted");
+    contactConfirmation.classList.add("active");
   } else {
-    console.log("failure");
+    // TODO: handle error
   }
 };

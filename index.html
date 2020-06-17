@@ -243,12 +243,18 @@
 
         <div class="contact">
           <h3>Contact</h3>
-          <form class="contact-form" id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Name*" required>
-            <input type="email" id="email" name="email" placeholder="Email*" title="Please enter a valid email" required>
-            <textarea type="text" id="message" name="message" placeholder="Message*" required></textarea>
-            <input type="submit">
-          </form>
+          <div class="contact-container">
+            <form class="contact-form">
+              <input type="text" id="name" name="name" placeholder="Name*" required>
+              <input type="email" id="email" name="email" placeholder="Email*" title="Please enter a valid email" required>
+              <textarea type="text" id="message" name="message" placeholder="Message*" required></textarea>
+              <input type="submit">
+            </form>
+            <p class="contact-confirmation">
+              Your message has been sent.<br>
+              Thanks for reaching out!
+            </p>
+          </div>
           <div class="social-links">
             <a href="https://github.com/domferris" target="_blank"><i class="fab fa-github-square social-link"></i></a>
             <a href="https://www.linkedin.com/in/domferris/" target="_blank"><i
