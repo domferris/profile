@@ -1,5 +1,5 @@
 // CONTACT SUBMISSION
-const backendContact = "http://127.0.0.1:3000/contact";
+const backendContact = "https://domferris.herokuapp.com/contact";
 const contactForm = document.getElementById("contact-form");
 
 contactForm.onsubmit = async (event) => {
@@ -16,4 +16,10 @@ contactForm.onsubmit = async (event) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
+
+  if (response.status == 200) {
+    console.log("success");
+  } else {
+    console.log("failure");
+  }
 };
