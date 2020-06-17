@@ -256,6 +256,13 @@ header.active {
 
 #info .contact h3 {
   margin-bottom: 1em;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#info .contact h3.submitted {
+  opacity: 0;
 }
 
 #info .contact input,
@@ -264,32 +271,62 @@ header.active {
   font-size: 0.8rem;
 }
 
-#info .contact .contact-form {
+#info .contact .contact-container {
   margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#info .contact .contact-form input, #info .contact .contact-form textarea {
+#info .contact .contact-container .contact-form {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#info .contact .contact-container .contact-form input, #info .contact .contact-container .contact-form textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#info .contact .contact-form #name {
+#info .contact .contact-container .contact-form #name {
   width: 100%;
   margin-bottom: 0.5em;
 }
 
-#info .contact .contact-form #email {
+#info .contact .contact-container .contact-form #email {
   width: 100%;
   margin-bottom: 0.5em;
 }
 
-#info .contact .contact-form #message {
+#info .contact .contact-container .contact-form #message {
   height: 6em;
   width: 100%;
   margin-bottom: 0.6em;
 }
 
-#info .contact .contact-form input[type="submit"] {
+#info .contact .contact-container .contact-form input[type="submit"] {
   font-size: 1rem;
+}
+
+#info .contact .contact-container .contact-form.submitted {
+  opacity: 0;
+}
+
+#info .contact .contact-container .contact-confirmation {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#info .contact .contact-container .contact-confirmation.active {
+  opacity: 1;
 }
 
 #info .social-links a {
