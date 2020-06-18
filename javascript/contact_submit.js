@@ -2,6 +2,7 @@
 const backendContact = "https://domferris.herokuapp.com/contact";
 const contactHeader = document.querySelector(".contact > h3");
 const contactForm = document.querySelector(".contact-form");
+const contactFormItems = document.querySelectorAll(".contact-form > *");
 const contactConfirmation = document.querySelector(".contact-confirmation");
 
 contactForm.onsubmit = async (event) => {
@@ -21,6 +22,7 @@ contactForm.onsubmit = async (event) => {
 
   if (response.status == 200) {
     contactHeader.classList.add("submitted");
+    contactFormItems.forEach((item) => item.setAttribute("disabled", ""));
     contactForm.classList.add("submitted");
     contactConfirmation.classList.add("active");
   } else {

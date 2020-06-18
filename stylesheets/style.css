@@ -263,6 +263,7 @@ header.active {
 
 #info .contact h3.submitted {
   opacity: 0;
+  cursor: default;
 }
 
 #info .contact input,
