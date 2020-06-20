@@ -151,19 +151,23 @@ header {
 }
 
 #projects {
-  .featured-project {
-    margin-bottom: 3em;
-
-    h2 {
-      margin-bottom: 1em;
-    }
-  }
-
   .section-container > ul {
     list-style: none;
 
     > li:not(:last-child) {
-      margin-bottom: 0.5em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .project {
+    margin-bottom: 3.5em;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    .project-description {
+      margin-left: 0.5em;
     }
   }
 }
