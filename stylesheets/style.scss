@@ -152,6 +152,7 @@ header {
 #projects {
   .section-container > ul {
     list-style: none;
+    margin-bottom: 3.5em;
 
     > li:not(:last-child) {
       margin-bottom: 2em;
@@ -159,8 +160,6 @@ header {
   }
 
   .project {
-    margin-bottom: 3.5em;
-
     h2 {
       margin-bottom: 1em;
     }

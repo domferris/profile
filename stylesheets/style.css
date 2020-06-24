@@ -178,14 +178,11 @@ header.active {
 
 #projects .section-container > ul {
   list-style: none;
+  margin-bottom: 3.5em;
 }
 
 #projects .section-container > ul > li:not(:last-child) {
   margin-bottom: 2em;
-}
-
-#projects .project {
-  margin-bottom: 3.5em;
 }
 
 #projects .project h2 {
