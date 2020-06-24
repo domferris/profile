@@ -40,7 +40,6 @@ main {
 }
 
 .mobile-nav {
-  // outline: 1px solid red;
   position: fixed;
   right: -10%;
   height: 100vh;
@@ -151,19 +150,22 @@ header {
 }
 
 #projects {
-  .featured-project {
-    margin-bottom: 3em;
+  .section-container > ul {
+    list-style: none;
+    margin-bottom: 3.5em;
 
-    h2 {
-      margin-bottom: 1em;
+    > li:not(:last-child) {
+      margin-bottom: 2em;
     }
   }
 
-  .section-container > ul {
-    list-style: none;
+  .project {
+    h2 {
+      margin-bottom: 1em;
+    }
 
-    > li:not(:last-child) {
-      margin-bottom: 0.5em;
+    .project-description {
+      margin-left: 0.5em;
     }
   }
 }

@@ -176,20 +176,21 @@ header.active {
   opacity: 100%;
 }
 
-#projects .featured-project {
-  margin-bottom: 3em;
-}
-
-#projects .featured-project h2 {
-  margin-bottom: 1em;
-}
-
 #projects .section-container > ul {
   list-style: none;
+  margin-bottom: 3.5em;
 }
 
 #projects .section-container > ul > li:not(:last-child) {
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+
+#projects .project h2 {
+  margin-bottom: 1em;
+}
+
+#projects .project .project-description {
+  margin-left: 0.5em;
 }
 
 #experience .section-container > ul {
