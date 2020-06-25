@@ -20,12 +20,19 @@ contactForm.onsubmit = async (event) => {
     body: JSON.stringify(body),
   });
 
-  if (response.status == 200) {
+  if (response.status === 200) {
     contactHeader.classList.add("submitted");
     contactFormItems.forEach((item) => item.setAttribute("disabled", ""));
     contactForm.classList.add("submitted");
     contactConfirmation.classList.add("active");
   } else {
-    // TODO: handle error
+    const data = await response.json();
+
+    alert(
+      `Uh oh! Your message failed to send. Please try again.\r\n
+      Status: ${response.status}\r\n
+      ${data.error}`
+    );
+    // If the error persists, fret not. I have received a notification regarding this error and will be in touch with you as soon as possible.\r\n
   }
 };
