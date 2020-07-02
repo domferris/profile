@@ -1,5 +1,12 @@
 // CONTACT SUBMISSION
-const backendContact = "https://domferris.herokuapp.com/contact";
+const urlContact = window.location.href;
+let backendContact;
+if (urlContact.includes("localhost") || urlContact.includes("127.0.0.1")) {
+  backendContact = "http://localhost:3000/contact";
+} else {
+  backendContact = "https://domferris.herokuapp.com/contact";
+}
+
 const contactHeader = document.querySelector(".contact > h3");
 const contactForm = document.querySelector(".contact-form");
 const contactFormItems = document.querySelectorAll(".contact-form > *");
