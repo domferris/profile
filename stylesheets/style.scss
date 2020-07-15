@@ -158,10 +158,6 @@ header {
     justify-content: center;
     align-items: center;
     background: white;
-  
-    .loader {
-      font-size: 1.2rem;
-    }
 
     .loader::after {
       content: '\2026';
