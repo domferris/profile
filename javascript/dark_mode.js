@@ -1,13 +1,13 @@
 // TOGGLE DARK MODE
-const darkModeBtn = document.querySelector(".btn-dark-mode");
+const darkModeToggle = document.querySelector(".dark-mode-toggle");
 const body = document.querySelector("body");
 
-darkModeBtn.addEventListener("click", () => {
+darkModeToggle.addEventListener("click", () => {
   if (!body.classList.contains("dark-mode")) {
     body.classList.add("dark-mode");
-    darkModeBtn.innerHTML = "View profile in Light Mode";
+    darkModeToggle.innerHTML = "View profile in Light Mode";
   } else {
     body.classList.remove("dark-mode");
-    darkModeBtn.innerHTML = "View profile in Dark Mode";
+    darkModeToggle.innerHTML = "View profile in Dark Mode";
   }
 });
