@@ -375,6 +375,11 @@ header .loader-wrapper .loader::after {
   font-size: 1.6rem;
 }
 
+.btn-dark-mode {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .dark-mode {
   background: #191919;
   color: gainsboro;
@@ -386,7 +391,7 @@ header .loader-wrapper .loader::after {
 }
 
 .dark-mode a {
-  color: #6e6ee4;
+  color: #8787ff;
 }
 
 .dark-mode a:active {

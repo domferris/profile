@@ -340,6 +340,15 @@ header {
   }
 }
 
+////////////////////
+// DARK MODE
+////////////////////
+
+.btn-dark-mode {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .dark-mode {
   background: rgb(25, 25, 25);
   color: rgb(220, 220, 220);
@@ -350,7 +359,7 @@ header {
   }
   
   a {
-    color: rgb(110, 110, 228);
+    color: rgb(135, 135, 255);
   
     &:active {
       color: rgb(195, 110, 110);
