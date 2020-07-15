@@ -14,7 +14,6 @@ fetch(backendGitHub)
     contributionsNum.innerHTML = data.contributionsNum;
     window.setTimeout(() => {
       $(".loader").fadeOut(100);
-      $(".loader-inner").fadeOut(400);
       $(".loader-wrapper").fadeOut(750);
     }, 700);
   });
