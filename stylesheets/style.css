@@ -375,6 +375,39 @@ header .loader-wrapper .loader::after {
   font-size: 1.6rem;
 }
 
+.dark-mode-toggle {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background: #232323;
+  color: #f0f0f0;
+}
+
+.dark-mode p {
+  color: gainsboro;
+  line-height: 1.3em;
+}
+
+.dark-mode a {
+  color: #9191ff;
+}
+
+.dark-mode a:active {
+  color: #c36e6e;
+}
+
+.dark-mode .loader-wrapper {
+  background: #191919;
+}
+
+.dark-mode .contact-form input, .dark-mode .contact-form textarea {
+  background: #323232;
+  color: gainsboro;
+  border: 2px inset #646464;
+}
+
 /* On screens that are 1667px or less */
 @media screen and (max-width: 1667px) {
   main {
