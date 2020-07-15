@@ -12,4 +12,5 @@ fetch(backendGitHub)
   .then((data) => {
     const contributionsNum = document.querySelector(".contributions-num");
     contributionsNum.innerHTML = data.contributionsNum;
+    $(".loader-wrapper").fadeOut("fast");
   });
