@@ -12,7 +12,9 @@ fetch(backendGitHub)
   .then((data) => {
     const contributionsNum = document.querySelector(".contributions-num");
     contributionsNum.innerHTML = data.contributionsNum;
-    $(".loader").fadeOut(100);
-    $(".loader-inner").fadeOut(400);
-    $(".loader-wrapper").fadeOut(750);
+    window.setTimeout(() => {
+      $(".loader").fadeOut(100);
+      $(".loader-inner").fadeOut(400);
+      $(".loader-wrapper").fadeOut(750);
+    }, 700);
   });
