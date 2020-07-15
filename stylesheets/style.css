@@ -194,6 +194,10 @@ header .loader-wrapper {
   background: white;
 }
 
+header .loader-wrapper .loader {
+  font-size: 1.2rem;
+}
+
 header .loader-wrapper .loader::after {
   content: '\2026';
   display: inline-block;
