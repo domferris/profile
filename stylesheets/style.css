@@ -381,17 +381,17 @@ header .loader-wrapper .loader::after {
 }
 
 .dark-mode {
-  background: #191919;
-  color: gainsboro;
+  background: #232323;
+  color: #f0f0f0;
 }
 
 .dark-mode p {
-  color: #e6e6e6;
+  color: gainsboro;
   line-height: 1.3em;
 }
 
 .dark-mode a {
-  color: #8787ff;
+  color: #9191ff;
 }
 
 .dark-mode a:active {
@@ -404,7 +404,8 @@ header .loader-wrapper .loader::after {
 
 .dark-mode .contact-form input, .dark-mode .contact-form textarea {
   background: #4b4b4b;
-  color: #e6e6e6;
+  color: gainsboro;
+  border: 2px inset #646464;
 }
 
 /* On screens that are 1667px or less */

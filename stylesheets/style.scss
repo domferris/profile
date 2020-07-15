@@ -350,16 +350,16 @@ header {
 }
 
 .dark-mode {
-  background: rgb(25, 25, 25);
-  color: rgb(220, 220, 220);
+  background: rgb(35, 35, 35);
+  color: rgb(240, 240, 240);
 
   p {
-    color: rgb(230, 230, 230);
+    color: rgb(220, 220, 220);
     line-height: 1.3em;
   }
   
   a {
-    color: rgb(135, 135, 255);
+    color: rgb(145, 145, 255);
   
     &:active {
       color: rgb(195, 110, 110);
@@ -373,7 +373,8 @@ header {
   .contact-form {
     input, textarea {
       background: rgb(75, 75, 75);
-      color: rgb(230, 230, 230);
+      color: rgb(220, 220, 220);
+      border: 2px inset rgb(100, 100, 100);
     }
   }
 }

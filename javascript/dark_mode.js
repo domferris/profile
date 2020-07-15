@@ -5,9 +5,9 @@ const body = document.querySelector("body");
 darkModeBtn.addEventListener("click", () => {
   if (!body.classList.contains("dark-mode")) {
     body.classList.add("dark-mode");
-    darkModeBtn.innerHTML = "Back to Light Mode";
+    darkModeBtn.innerHTML = "View profile in Light Mode";
   } else {
     body.classList.remove("dark-mode");
-    darkModeBtn.innerHTML = "Back to Dark Mode";
+    darkModeBtn.innerHTML = "View profile in Dark Mode";
   }
 });
