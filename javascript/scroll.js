@@ -1,4 +1,4 @@
-// SMOOTH NAV SCROLLING
+// SMOOTH CLICK SCROLLING
 const navLinks = document.querySelectorAll('nav a[href*="#"]');
 const portfolioLink = document.querySelector(".portfolio-link");
 

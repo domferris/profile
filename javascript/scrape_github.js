@@ -15,5 +15,5 @@ fetch(backendGitHub)
     window.setTimeout(() => {
       $(".loader").fadeOut(100);
       $(".loader-wrapper").fadeOut(750);
-    }, 700);
+    }, 500);
   });
