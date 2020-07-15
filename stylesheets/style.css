@@ -194,105 +194,25 @@ header .loader-wrapper {
   background: white;
 }
 
-header .loader-wrapper .loader {
+header .loader-wrapper .loader::after {
+  content: '\2026';
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid black;
-  border-radius: 2px;
-  -webkit-animation: loader 2s infinite ease;
-          animation: loader 2s infinite ease;
+  overflow: hidden;
+  vertical-align: bottom;
+  -webkit-animation: dots steps(4, end) 2s infinite;
+          animation: dots steps(4, end) 2s infinite;
+  width: 0;
 }
 
-header .loader-wrapper .loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: black;
-  -webkit-animation: loader-inner 2s infinite ease-in;
-          animation: loader-inner 2s infinite ease-in;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+@-webkit-keyframes dots {
+  to {
+    width: 1.5em;
   }
 }
 
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  25% {
-    height: 0%;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0%;
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  25% {
-    height: 0%;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0%;
+@keyframes dots {
+  to {
+    width: 1.5em;
   }
 }
 
