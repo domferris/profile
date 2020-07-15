@@ -340,6 +340,36 @@ header {
   }
 }
 
+.dark-mode {
+  background: rgb(25, 25, 25);
+  color: rgb(220, 220, 220);
+
+  p {
+    color: rgb(230, 230, 230);
+    line-height: 1.3em;
+  }
+  
+  a {
+    color: rgb(110, 110, 228);
+  
+    &:active {
+      color: rgb(195, 110, 110);
+    }
+  }
+
+  .loader-wrapper {
+    background: rgb(25, 25, 25);
+  }
+
+  .contact-form {
+    input, textarea {
+      background: rgb(75, 75, 75);
+      color: rgb(230, 230, 230);
+    }
+  }
+}
+
+
 ////////////////////
 // BREAKPOINTS
 ////////////////////
