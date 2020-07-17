@@ -283,8 +283,24 @@ header .loader-wrapper .loader::after {
 }
 
 #info .bio {
-  text-indent: 2em;
   margin-bottom: 3em;
+}
+
+#info .bio .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#info .bio .details .portrait {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#info .bio .details .summary {
+  text-indent: 2em;
 }
 
 #info .contact {

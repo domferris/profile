@@ -254,8 +254,21 @@ header {
   padding-bottom: 3em;
 
   .bio {
-    text-indent: 2em;
     margin-bottom: 3em;
+
+    .details {
+      display: flex;
+
+      .portrait {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .summary {
+        text-indent: 2em;
+      }
+    }
   }
 
   .contact {
