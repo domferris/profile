@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 970px;
   margin: 0 auto;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -128,7 +128,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: auto 0;
+  margin-bottom: 3em;
 }
 
 section > h2 {
@@ -278,13 +278,31 @@ header .loader-wrapper .loader::after {
   margin-left: 0.5em;
 }
 
-#info {
-  padding-bottom: 3em;
+#info .bio {
+  margin-bottom: 3em;
 }
 
-#info .bio {
+#info .bio .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info .bio .details .portrait {
+  width: 150px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+  margin-right: 2em;
+}
+
+#info .bio .details .summary {
   text-indent: 2em;
-  margin-bottom: 3em;
 }
 
 #info .contact {
@@ -423,7 +441,7 @@ header .loader-wrapper .loader::after {
 }
 
 /* On screens that are 800px or less */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   main {
     margin: 0 10%;
   }
@@ -435,6 +453,19 @@ header .loader-wrapper .loader::after {
   }
   #info .contact {
     width: 90%;
+  }
+}
+
+/* On screens that are 695px or less */
+@media screen and (max-width: 695px) {
+  .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details .portrait {
+    margin-bottom: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
