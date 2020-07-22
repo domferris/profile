@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 970px;
   margin: 0 auto;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -128,7 +128,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: auto 0;
 }
 
 section > h2 {
@@ -291,9 +290,6 @@ header .loader-wrapper .loader::after {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -302,8 +298,6 @@ header .loader-wrapper .loader::after {
 #info .bio .details .portrait {
   width: 150px;
   height: 180px;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
