@@ -104,6 +104,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 3em;
 
   > h2 {
     margin: 2em 0;
@@ -250,8 +251,6 @@ header {
 }
 
 #info {
-  padding-bottom: 3em;
-
   .bio {
     margin-bottom: 3em;
 

@@ -128,6 +128,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 3em;
 }
 
 section > h2 {
@@ -275,10 +276,6 @@ header .loader-wrapper .loader::after {
 
 #education .education-container p {
   margin-left: 0.5em;
-}
-
-#info {
-  padding-bottom: 3em;
 }
 
 #info .bio {
