@@ -437,3 +437,14 @@ header {
     width: 90%;
   }
 }
+
+/* On screens that are 695px or less */
+@media screen and (max-width: 695px) {
+  .details {
+    flex-direction: column;
+
+    .portrait {
+      margin-bottom: 1.5em;
+    }
+  }
+}
