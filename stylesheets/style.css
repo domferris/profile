@@ -450,7 +450,7 @@ header .loader-wrapper .loader::after {
 }
 
 /* On screens that are 800px or less */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   main {
     margin: 0 10%;
   }
