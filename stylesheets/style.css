@@ -290,13 +290,24 @@ header .loader-wrapper .loader::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #info .bio .details .portrait {
   width: 150px;
-  height: 150px;
+  height: 180px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 2px;
+  margin-right: 2em;
 }
 
 #info .bio .details .summary {
