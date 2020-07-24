@@ -23,3 +23,38 @@ const projectsToggle = (event) => {
 projectsList.forEach((project) =>
   project.addEventListener("click", projectsToggle)
 );
+
+////////////////////////////////////////
+// CODE BELOW FOR MASS PROJECT SWITCHING
+////////////////////////////////////////
+
+// SHOW/HIDE ALT NAVS
+// const landingNav = document.querySelector("header");
+// const sideNav = document.querySelector(".side-nav");
+// const mobileNav = document.querySelector(".mobile-nav");
+
+// const breakPointPercentage = 0.4;
+// const breakPointHeight = window.innerHeight * breakPointPercentage;
+
+// const navSwitch = (elements, status) => {
+//   // enables single or multiple elements
+//   const flatElements = [elements].flat();
+
+//   flatElements.forEach((element) => {
+//     if (status == "on") {
+//       element.classList.add("active");
+//     } else {
+//       element.classList.remove("active");
+//     }
+//   });
+// };
+
+// window.addEventListener("scroll", (event) => {
+//   if (scrollY > breakPointHeight) {
+//     navSwitch(landingNav, "off");
+//     navSwitch([sideNav, mobileNav], "on");
+//   } else {
+//     navSwitch(landingNav, "on");
+//     navSwitch([sideNav, mobileNav], "off");
+//   }
+// });
