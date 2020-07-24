@@ -393,7 +393,7 @@ header .loader-wrapper .loader::after {
   font-size: 1.6rem;
 }
 
-.dark-mode-toggle {
+.mode-toggle {
   text-decoration: underline;
   cursor: pointer;
 }
