@@ -1,12 +1,12 @@
 // TOGGLE DARK MODE
 const modeToggle = document.querySelector(".mode-toggle");
-const mode = document.querySelector(".mode");
+const modeDisplay = document.querySelector(".mode-display");
 const body = document.body;
 
 modeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+  const isDarkMode = body.classList.toggle("dark-mode");
 
-  const modeText = body.classList.contains("dark-mode") ? "Light" : "Dark";
+  const modeText = isDarkMode ? "Light" : "Dark";
 
-  mode.innerHTML = modeText;
+  modeDisplay.innerHTML = modeText;
 });
