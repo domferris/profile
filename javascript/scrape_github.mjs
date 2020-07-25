@@ -1,3 +1,5 @@
+import formatNumber from "./utility/format_number.js";
+
 // CONTRIBUTIONS NUMBER RETRIEVAL VIA GITHUB SCRAPE
 const urlGitHub = window.location.href;
 let backendGitHub;
@@ -11,7 +13,7 @@ fetch(backendGitHub)
   .then((response) => response.json())
   .then((data) => {
     const contributionsNum = document.querySelector(".contributions-num");
-    contributionsNum.innerHTML = data.contributionsNum;
+    contributionsNum.innerHTML = formatNumber(data.contributionsNum);
 
     // "loading..." animation fade out upon contributionsNum retrieval
     window.setTimeout(() => {
