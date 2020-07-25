@@ -12,6 +12,8 @@ fetch(backendGitHub)
   .then((data) => {
     const contributionsNum = document.querySelector(".contributions-num");
     contributionsNum.innerHTML = data.contributionsNum;
+
+    // "loading..." animation fade out upon contributionsNum retrieval
     window.setTimeout(() => {
       $(".loader").fadeOut(100);
       $(".loader-wrapper").fadeOut(750);
