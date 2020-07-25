@@ -40,6 +40,5 @@ contactForm.onsubmit = async (event) => {
       Status: ${response.status}\r\n
       ${data.error}`
     );
-    // If the error persists, fret not. I have received a notification regarding this error and will be in touch with you as soon as possible.\r\n
   }
 };

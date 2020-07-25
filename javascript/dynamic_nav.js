@@ -1,20 +1,22 @@
 // SHOW/HIDE ALT NAVS
+const landingNav = document.querySelector("header");
+const sideNav = document.querySelector(".side-nav");
+const mobileNav = document.querySelector(".mobile-nav");
+
+const breakPointPercentage = 0.4;
+const breakPointHeight = window.innerHeight * breakPointPercentage;
+
+const enable = (element) => element.classList.add("active");
+const disable = (element) => element.classList.remove("active");
+
 window.addEventListener("scroll", (event) => {
-  const landing = document.querySelector("header");
-  const sideNav = document.querySelector(".side-nav");
-  const mobileNav = document.querySelector(".mobile-nav");
-
-  if (scrollY < event.currentTarget.innerHeight * 0.4) {
-    landing.classList.add("active");
+  if (scrollY < breakPointHeight) {
+    enable(landingNav);
+    disable(sideNav);
+    disable(mobileNav);
   } else {
-    landing.classList.remove("active");
-  }
-
-  if (landing.classList.contains("active")) {
-    sideNav.classList.remove("active");
-    mobileNav.classList.remove("active");
-  } else {
-    sideNav.classList.add("active");
-    mobileNav.classList.add("active");
+    disable(landingNav);
+    enable(sideNav);
+    enable(mobileNav);
   }
 });
